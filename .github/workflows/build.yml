@@ -57,8 +57,9 @@ jobs:
   ubuntu-latest-cmake:
     runs-on: ubuntu-latest
 
-    continue-on-error: true
-
+    # continue-on-error: true
+    container:
+      image: quay.io/pypa/manylinux2014_x86_64
     steps:
       - name: Clone
         id: checkout
