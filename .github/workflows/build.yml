@@ -55,11 +55,9 @@ jobs:
   #         ASAN_OPTIONS=detect_odr_violation=0 ctest --verbose
 
   ubuntu-latest-cmake:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     # continue-on-error: true
-    container:
-      image: ubuntu:20.04
     steps:
       - name: Clone
         id: checkout
